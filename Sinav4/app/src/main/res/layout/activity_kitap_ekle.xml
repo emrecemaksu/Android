@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KitapEkle">
+
+    <TextView
+        android:id="@+id/txt_Ekle_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="25dp"
+        android:text="Kitap Ekle"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_Ekle_Name"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Ekle_Name" />
+
+    <EditText
+        android:id="@+id/edit_Ekle_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="Kitap Adı.."
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Ekle_Yazar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="41dp"
+        android:text="Kitap Yazarı"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Ekle_Yazar"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Ekle_Name" />
+
+    <EditText
+        android:id="@+id/edit_Ekle_Yazar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Kitap Yazarı..."
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_Ekle_Yazar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Ekle_Yil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="40dp"
+        android:text="Basım Yılı"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Ekle_Yil"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Ekle_Yazar" />
+
+    <EditText
+        android:id="@+id/edit_Ekle_Yil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Basım Yılı..."
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_Ekle_Yil"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_Ekle_Fiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="34dp"
+        android:text="Kitap Fiyatı "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/edit_Ekle_Fiyat"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Ekle_Yil" />
+
+    <EditText
+        android:id="@+id/edit_Ekle_Fiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Fiyat..."
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txt_Ekle_Fiyat"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Ekle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Kitap Ekle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
